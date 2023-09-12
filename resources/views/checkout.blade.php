@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1>Checkout</h1>
+        <h2 class="text-center mb-3">Checkout Product</h2>
         <table class="table">
             <thead>
                 <tr>

@@ -24,6 +24,12 @@ class TransactionDetail extends Model
     ];
 
     // Definisikan relasi dengan model lain jika diperlukan, misalnya dengan model Product atau User.
+    public static function getAllTransaction()
+    {
+        $alldata = self::all(); // Menggunakan Eloquent untuk mengambil semua data
+        return $alldata;
+    }
+
     public function product()
     {
         return $this->belongsTo(Product::class, 'product_code', 'product_code');

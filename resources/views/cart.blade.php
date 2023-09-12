@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container">
+        <h2 class="text-center mb-3">Cart Product</h2>
         <table id="cart" class="table table-hover table-condensed">
             <thead>
                 <tr>

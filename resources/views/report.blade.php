@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1>Laporan Penjualan</h1>
+        <h2 class="text-center mb-3">Sales Report Product</h2>
         <table class="table table-bordered">
             <thead>
                 <tr>

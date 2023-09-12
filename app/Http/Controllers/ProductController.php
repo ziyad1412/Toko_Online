@@ -134,6 +134,8 @@ class ProductController extends Controller
             $total += $details['price'] * $details['quantity'];
         }
 
+        session()->put('cart', []);
+
         return view('checkout', compact('cart', 'total'));
     }
 

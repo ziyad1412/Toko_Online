@@ -24,8 +24,8 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-            'product_code' => 'PROD123',
-            'product_name' => 'Produk 123',
+            'product_code' => 'DD001',
+            'product_name' => 'Daia Deterjen',
             'price' => 20000,
             'currency' => 'IDR',
             'discount' => 5.00,
@@ -34,8 +34,8 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-            'product_code' => 'XYZ789',
-            'product_name' => 'Produk XYZ',
+            'product_code' => 'GS002',
+            'product_name' => 'Giv Sabun',
             'price' => 25000,
             'currency' => 'IDR',
             'discount' => 15.00,
@@ -44,8 +44,8 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-            'product_code' => 'ABCD456',
-            'product_name' => 'Produk ABCD',
+            'product_code' => 'NS003',
+            'product_name' => 'Nuvo Sabun',
             'price' => 18000,
             'currency' => 'IDR',
             'discount' => 8.00,
@@ -54,8 +54,8 @@ class ProductSeeder extends Seeder
         ]);
 
         Product::create([
-            'product_code' => 'XYZ987',
-            'product_name' => 'Produk XYZ 987',
+            'product_code' => 'PP001',
+            'product_name' => 'Protex Pembalut',
             'price' => 30000,
             'currency' => 'IDR',
             'discount' => 20.00,

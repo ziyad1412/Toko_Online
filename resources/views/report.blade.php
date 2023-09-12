@@ -7,7 +7,6 @@
             <thead>
                 <tr>
                     <th>Document Code</th>
-                    <th>Document Number</th>
                     <th>User</th>
                     <th>Total</th>
                     <th>Date</th>
@@ -17,9 +16,8 @@
                 @foreach ($transactionHeaders as $header)
                     <tr>
                         <td>{{ $header->document_code }}</td>
-                        <td>{{ $header->document_number }}</td>
                         <td>{{ $header->user }}</td>
-                        <td>{{ $header->total }}</td>
+                        <td>Rp {{ number_format($header->total, 0, ',', '.') }}</td>
                         <td>{{ $header->date }}</td>
                     </tr>
                 @endforeach

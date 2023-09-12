@@ -89,7 +89,7 @@
                                     <div class="row total-header-section">
                                         @php $total = 0 @endphp
                                         @foreach ((array) session('cart') as $id => $details)
-                                            @php $total += $details['price'] * $details['quantity'] @endphp
+                                            @php $total += ($details['price'] - ($details['price'] / $details['discount'])) * $details['quantity'] @endphp
                                         @endforeach
                                         <div class="col-lg-12 col-sm-12 col-12 total-section text-right">
                                             <p>Total: <span class="text-info">Rp
@@ -105,7 +105,7 @@
                                                     <p>{{ $details['product_name'] }}</p>
                                                     <div class="row">
                                                         <div class="col-6"><span class="price text-info"> Rp
-                                                                {{ number_format($details['price'], 0, ',', '.') }}</span>
+                                                                {{ number_format($details['price'] - $details['price'] / $details['discount'], 0, ',', '.') }}</span>
                                                         </div>
                                                         <div class="col-6"><span class="count pl-5 mb-3">
                                                                 Quantity:{{ $details['quantity'] }}</span></div>

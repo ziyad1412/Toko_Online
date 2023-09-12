@@ -13,12 +13,18 @@
                 </tr>
             </thead>
             <tbody>
+                @php $total = 0 @endphp
                 @foreach ($cart as $id => $details)
+                    @php $total += ($details['price'] - ($details['price'] / $details['discount'])) * $details['quantity'] @endphp
                     <tr>
                         <td>{{ $details['product_name'] }}</td>
-                        <td>Rp {{ number_format($details['price'], 0, ',', '.') }}</td>
+                        <td>Rp
+                            {{ number_format($details['price'] - $details['price'] / $details['discount'], 0, ',', '.') }}
+                        </td>
                         <td>{{ $details['quantity'] }}</td>
-                        <td>Rp {{ number_format($details['price'] * $details['quantity'], 0, ',', '.') }}</td>
+                        <td>Rp
+                            {{ number_format(($details['price'] - $details['price'] / $details['discount']) * $details['quantity'], 0, ',', '.') }}
+                        </td>
                     </tr>
                 @endforeach
             </tbody>

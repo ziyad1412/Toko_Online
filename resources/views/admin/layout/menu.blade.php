@@ -21,6 +21,7 @@
                           <nav class="sb-sidenav-menu-nested nav">
 
                               <a class="nav-link" href="{{ url('/product') }}">Product</a>
+                              <a class="nav-link" href="{{ url('/transaction') }}">Transaction</a>
                           </nav>
                       </div>
 
